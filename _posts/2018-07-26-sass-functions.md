@@ -2,11 +2,13 @@
 layout: post
 title:  "Welcome to sass!~~"
 date:   2018-07-26 23:29:55 +0800
-categories: scss sass
+tags: css api
+cover: "/assets/img/home-bg.jpg"
 ---
 
 
 一个颜色的alpha 通道可以通过 {Sass::Script::Functions#opacify opacify} 和 {Sass::Script::Functions#transparentize transparentize} 函数进行调整。 例如：
+
 {% highlight scss %}
 $translucent-red: rgba(255, 0, 0, 0.5);
 p {

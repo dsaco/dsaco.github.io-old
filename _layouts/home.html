@@ -2,33 +2,67 @@
 layout: default
 ---
 
-<div class="home">
-  {%- if page.title -%}
+<style type="text/css">
+    header.site-cover{
+        background-image: url("{{ page.cover | default: site.cover | absolute_url }}");
+    }
+    header.site-cover .cover-mask{
+        background: rgba(0,0,0,.3);
+    }
+</style>
+<header class="site-cover" >
+    <div class="cover-mask"></div>
+    <div class="wrapper">
+      <div class="site-heading">
+        <h1>{{site.title}}</h1>
+      </div>
+      <!-- <div class="post-heading">
+          <div class="tags">
+              {% for tag in page.tags %}
+              <a class="tag" href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>
+              {% endfor %}
+          </div>
+          <h1>{{ page.title }}</h1>
+          {% comment %}
+              always create a h2 for keeping the margin , Hux
+          {% endcomment %}
+          {% comment %} if page.subtitle {% endcomment %}
+          <h2 class="subheading">{{ page.subtitle }}</h2>
+          {% comment %} endif {% endcomment %}
+          <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
+      </div> -->
+    </div>
+</header>
+<div class="wrapper">
+  <div class="home">
+    <!-- {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+    {%- endif -%} -->
+    {{ content }}
 
-  {{ content }}
-
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    {%- if site.posts.size > 0 -%}
+    <!-- <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2> -->
     <ul class="post-list">
       {%- for post in site.posts -%}
       <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          <h3>
             {{ post.title | escape }}
-          </a>
-        </h3>
+          </h3>
+        </a>
         {%- if site.show_excerpts -%}
+        <div class="post-excerpt">
           {{ post.excerpt }}
+        </div>
         {%- endif -%}
       </li>
       {%- endfor -%}
     </ul>
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {%- endif -%}
+    <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
+    {%- endif -%}
 
+  </div>
 </div>

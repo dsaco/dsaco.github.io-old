@@ -1,14 +1,53 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!~~"
+title:  "Welcome to Jekyll!~~James & th 天是个好日子 天是个好日子 天是个好日子"
 date:   2018-07-25 22:47:55 +0800
-categories: jekyll update
+<!-- categories: jekyll update -->
+tags: blog
 ---
+
+
+```
+function trigger(){
+//IE
+    if(document.all) {
+        document.getElementById("clickMe").click();
+    }
+// 其它浏览器
+    else {
+        var e = document.createEvent("MouseEvents");
+        e.initEvent("click", true, true);　　　　　　　　　　　　　　//这里的click可以换成你想触发的行为
+            document.getElementById("clickMe").dispatchEvent(e);　　　//这里的clickME可以换成你想触发行为的DOM结点
+        }   
+}
+```
+
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
 Jekyll also offers powerful support for code snippets:
+
+# h1
+## h2
+### h3abc
+#### h4
+##### h5
+###### h6
+
+- 今天是个好日子
+  今天是个好日子
+- 今天是个好日子
+
+> 今天是个好日纸
+> 今天是个好日纸
+
+> 今天是个好日纸
+>
+> 今天是个好日纸
+
+> 今天是个好日纸
+
 
 {% highlight ruby %}
 def print_hi(name)
