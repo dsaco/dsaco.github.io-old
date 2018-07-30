@@ -6,55 +6,71 @@ tags: javascript api
 cover: "/assets/img/home-bg.jpg"
 ---
 
+#### 属性
+> ``.attributes`` 返回一个元素的属性数组
 
-addEventListener()方法用于向指定元素添加事件句柄。
+> ``.childNodes`` 返回元素的一个子节点的数组
 
-``element.addEventListener(event,function,useCapture)``
+> ``.classList`` 返回元素的类名
 
-useCapture 可选。布尔值，指定事件是否字捕获或冒泡阶段执行。
+> ``.className`` **设置或返回**元素的class属性
 
-appendChild()方法可向节点的子节点列表的末尾添加新的子节点。
+> ``.clientHeight`` 在页面上返回内容的可视高度(不包括边框,边距或滚动条)
 
-``element.appendChild(node)``
+> ``.clientWidth`` 在页面上返回内容的可视宽度(不包括边框,边距或滚动条)
 
-cloneNode()方法可创建指定的节点的精确拷贝，拷贝所有的属性和值。
-``element.cloneNode(deep:boolean)`` : element (true复制子节点)
+> ``.contentEditable`` **设置或返回**元素的内容是否可编辑
 
-compareDocumentPosition()方法按照文档顺序，比较当前节点与指定节点的文档位置。
+> ``.dir`` **设置或返回**一个元素中的文本方向
 
-``ele1.compareDocumentPosition(ele2)`` : number
+> ``.firstChild`` 返回元素的第一个子节点
 
-1: 没有关系；2:ele1在ele2后；4:ele1在ele2前；8:ele1在ele2内；16:ele2在ele1内；32:没有关系或在同一元素的两个属性。可以组合返回 20: ele2在ele1内并且ele1在ele2前。
+> ``.id`` **设置或返回**元素的id
 
-## 属性
-attributes 获取元素属性的集合
+> ``.innerHTML`` **设置或返回**元素的内容
 
-``element.attributes``
+> ``.isContentEditable`` 元素内容可编辑返回true,否则false
 
-childNodes 获取元素的子节点集合
+> ``.lastChild`` 返回最后一个子元素
 
-``element.childNodes``
+> ``.nextSibling`` 返回该元素紧跟的一个节点
 
-className 获取元素的class属性
+> ``.nodeName`` 返回元素的标记名(大写)
 
-``element.className`` : string
+> ``.nodeType`` 返回元素的节点类型
 
-classList 获取元素的类名
+> ``.nodeValue`` 返回元素的节点值
 
-``element.classList`` : 类名列表
 
-在元素中添加一个或多个类名。
+#### 方法
+> ``.addEventListener()`` 向指定元素添加事件句柄
 
-``element.classList.add(class1,class2)``
+> ``.appendChild()`` 向节点的子节点列表的末尾添加新的子节点
 
-判断指定类名是否存在。
+> ``.cloneNode()`` 克隆某个元素
 
-``element.classList.contains(class)`` : boolean
+> ``.compareDocumentPosition()`` 比较两个元素的文档位置
 
-移除元素中一个或多个类名。
+> ``.focus()`` 设置文档或元素获取焦点
 
-``element.classList.remove(class1,class2)``
+> ``.getAttribute()`` 返回指定元素的属性值
 
-在元素中切换类名。
+> ``.getAttributeNode()`` 返回指定属性节点
 
-``element.classList.toggle(class)`` ：boolean （添加 true，移除false）
+> ``.getElementsByTagName()`` 返回指定标签名的所有子元素集合
+
+> ``.getElementsByClassName()`` 返回文档中所有指定类名的元素集合
+
+> ``.hasAttribute()`` 返回元素中是否存在指定属性
+
+> ``.hasAttributes()`` 如果元素有任何属性返回true,否则false
+
+> ``.hasChildNodes()`` 返回一个元素是否具有任何子元素
+
+> ``.hasFocus()`` 检测文档或元素是否获取焦点
+
+> ``.insertBefore()`` 现有的子元素之前插入一个新的子元素
+
+> ``.isEqualNode()`` 检查两个元素是否相等
+
+> ``.isSameNode()`` 检查两个节点是否是相同节点

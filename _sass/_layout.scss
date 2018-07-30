@@ -187,6 +187,9 @@ a.post-link {
 
 .post-content {
   margin: $spacing-unit 0;
+  p{
+    word-break: break-word;
+  }
 }
 
 //菜单按钮
