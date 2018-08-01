@@ -35,6 +35,15 @@ Jekyll also offers powerful support for code snippets:
 ##### h5
 ###### h6
 
+- [ ] no
+- [x] yes
+
+{% highlight bash %}
+git clone url
+{% endhighlight %}
+```
+git clone url
+```
 - 今天是个好日子
   今天是个好日子
 - 今天是个好日子
