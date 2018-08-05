@@ -3,7 +3,6 @@ layout: post
 title:  "fetch"
 date:   2018-08-04 17:36:00 +0800
 tags: javascript api fetch
-cover: "/assets/img/home-bg.jpg"
 ---
 
 Fetch Api 提供了一个javscript接口，用于访问和操纵HTTP管道的部分，例如请求和响应。
@@ -24,6 +23,7 @@ fetch规范与jQuery.ajax()主要有两种方式的不同：
 - headers: 请求的头信息，形式为 Headers 的对象或包含 ByteString 值的对象字面量。
   - Content-Type
     - application/json 指出实体的类型是 JSON
+    - application/x-www-form-urlencoded  key1=value1&key2=value2
     - text/plain 纯文本
     - text/xml xml
 - body: 请求的 body 信息：可能是一个 Blob、BufferSource、FormData、URLSearchParams 或者 USVString 对象。注意 GET 或 HEAD 方法的请求不能包含 body 信息。JSON格式需要转为字符串。

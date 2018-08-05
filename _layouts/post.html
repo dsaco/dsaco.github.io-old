@@ -4,7 +4,7 @@ layout: default
 
 <style type="text/css">
     header.site-cover{
-        background-image: url("{{ page.cover | default: site.cover | absolute_url }}");
+        background-image: url("{{ page.cover | default: site.cover }}");
     }
     header.site-cover .cover-mask{
         background: rgba(0,0,0,.3);

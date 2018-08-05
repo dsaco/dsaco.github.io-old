@@ -35,7 +35,7 @@ show_excerpts: true
 
 # date_format: "%Y年 %m月 %d日"
 date_format: "%B %-d, %Y"
-cover: "/assets/img/home-bg.jpg"
+cover: "/assets/img/site-cover.jpg"
 # sass:
 #   sass_dir: _sass
 # Exclude from processing.

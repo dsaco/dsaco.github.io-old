@@ -3,7 +3,6 @@ layout: post
 title:  "HTML DOM 元素对象"
 date:   2018-07-28 22:45:55 +0800
 tags: javascript api
-cover: "/assets/img/home-bg.jpg"
 ---
 
 #### 属性

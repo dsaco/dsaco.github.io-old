@@ -3,7 +3,6 @@ layout: post
 title:  "Welcome to sass!~~"
 date:   2018-07-26 23:29:55 +0800
 tags: css api
-cover: "/assets/img/home-bg.jpg"
 ---
 
 
