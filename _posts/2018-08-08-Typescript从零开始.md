@@ -2,10 +2,13 @@
 layout: post
 title:  "Typescript从零开始"
 date:   2018-08-08 22:26:00 +0800
-tags: Typescript React
+tags: typescript react
 ---
 
-跟着[官网](https://www.tslang.cn/docs/handbook/react-&-webpack.html)的例子，我们现在已经把环境搭建起来了
+跟着官网的例子，我们现在已经把环境搭建起来了
+
+[官网](https://www.tslang.cn/docs/handbook/react-&-webpack.html)
+
 从前我们习惯性的写：
 {% highlight js %}
 import React,{ Component } from 'react';
