@@ -7,7 +7,7 @@ tags: typescript react
 
 跟着官网的例子，我们现在已经把环境搭建起来了
 
-[官网](https://www.tslang.cn/docs/handbook/react-&-webpack.html)
+[官网](https://www.tslang.cn/docs/handbook/react-&-webpack.html) | [@types/**](http://definitelytyped.org/)
 
 从前我们习惯性的写：
 {% highlight js %}
@@ -44,3 +44,5 @@ express()
 import express from 'express';
 express()
 {% endhighlight%}
+
+> Property 'assign' does not exist on type 'ObjectConstructor'.
