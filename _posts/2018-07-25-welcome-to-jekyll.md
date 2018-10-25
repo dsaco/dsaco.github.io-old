@@ -1,62 +1,58 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!~~James & th 天是个好日子 天是个好日子 天是个好日子"
+title:  "Welcome to Jekyll!"
 date:   2018-07-25 22:47:55 +0800
 <!-- categories: jekyll update -->
-tags: blog
+tags: blog markdown
 ---
-
-
+##### 标题
 ```
-function trigger(){
-//IE
-    if(document.all) {
-        document.getElementById("clickMe").click();
-    }
-// 其它浏览器
-    else {
-        var e = document.createEvent("MouseEvents");
-        e.initEvent("click", true, true);　　　　　　　　　　　　　　//这里的click可以换成你想触发的行为
-            document.getElementById("clickMe").dispatchEvent(e);　　　//这里的clickME可以换成你想触发行为的DOM结点
-        }   
-}
-```
-
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
 # h1
 ## h2
-### h3abc
+### h3
 #### h4
 ##### h5
 ###### h6
-
+```
+##### 无序列表
+```
+- 文本1
+- 文本2
+- 文本3
+```
+##### 有序列表
+```
+1. hello
+2. world
+```
+##### 链接
+```
+[瑞秋](ds-or.com)
+```
+##### 图片
+![](cdn.ds-or.com/web/default.jpg)
+##### 引用
+```
+> 一盏灯， 一片昏黄； 一简书， 一杯淡茶。 守着那一份淡定， 品读属于自己的寂寞。 保持淡定， 才能欣赏到最美丽的风景！ 保持淡定， 人生从此不再寂寞。
+```
+##### 表格
+```
+| header | Body | Footer|
+| ------ | :---:| -----:|
+| one | two | three
+| 1 | 2 | 3
+| a | b | c
+```
+##### checkbox
+```
 - [ ] no
 - [x] yes
-
+```
+##### 代码段
+```
 {% highlight bash %}
 git clone url
 {% endhighlight %}
-```
-git clone url
-```
-- 今天是个好日子
-  今天是个好日子
-- 今天是个好日子
-
-> 今天是个好日纸
-> 今天是个好日纸
-
-> 今天是个好日纸
->
-> 今天是个好日纸
-
-> 今天是个好日纸
-
 
 {% highlight ruby %}
 def print_hi(name)
@@ -65,9 +61,4 @@ end
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+```
