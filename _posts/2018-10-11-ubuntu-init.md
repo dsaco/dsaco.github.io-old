@@ -43,4 +43,7 @@ sudo chown `USERNAME` /data/db
 ```
 pgrep mongo -l
 pgrep redis -l
+
+ps aux|grep redis
+
 ```
