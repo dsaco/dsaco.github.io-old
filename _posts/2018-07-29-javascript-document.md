@@ -67,3 +67,12 @@ tags: javascript api
 > ``.write()`` 向文档写HTML表达式或javascript代码
 
 > ``.writeIn()`` 等同于write(),不同的是在每个表达式之后写一个换行符
+
+
+##### document.implementation.createHTMLDocument
+如果需要将一段html转换为Document Object Modal（文档对象模型），而不影响到当前的html内容，可以通过此方法创建
+```
+const doc = document.implementation.createHTMLDocument('title');
+doc.documentElement.innerHTML = `${html}`;
+let root = doc.querySelector('body');
+```
