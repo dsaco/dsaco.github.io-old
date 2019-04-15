@@ -15,6 +15,16 @@ tags: Javascript event
 </ul>
 ```
 比起循环每个li并绑定点击事件，不如
+{% highlight js %}
+const ul = document.querySelector('ul');
+ul.onclick = function(e) {
+    let e = e || window.event;
+    let target = e.target || e.srcElement;
+    if (target.nodeName.toLowerCase() === 'li') {
+        console.log(target.innerHTML);
+    }
+}
+{% endhighlight %}
 ```
 const ul = document.querySelector('ul');
 ul.onclick = function(e) {
