@@ -21,7 +21,7 @@ new Date().toLocaleString('zh-hans-CN-u-nu-hanidec') // "二〇一八/一一/一
 
 
 
-表单label不同字数对齐方法
+##### 表单label不同字数对齐方法
 ```
 .text {
     text-align:justify;
