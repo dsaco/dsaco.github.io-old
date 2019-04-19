@@ -47,3 +47,8 @@ pgrep redis -l
 ps aux|grep redis
 
 ```
+
+查看启动服务的端口
+```
+netstat -tunlp
+```
