@@ -18,20 +18,21 @@ $inc
 ```
 ##### Description
 ```
-db.things.update({
+db.things.update(
     <query>, 
     <update>,
     upsert: <boolean>, //可选，这个参数的意思是，如果不存在update的记录，是否插入objNew,true为插入，默认是false，不插入。
     multi = <boolean>, //可选，mongodb 默认是false,只更新找到的第一条记录，如果这个参数为true,就把按条件查出来多条记录全部更新。
-})
+)
 ```
 ##### Example
 ```
-db.things.update({
+db.things.update(
     { field: FIELD },
     { $set: { field2: FIELD2 } },
-
-})
+    false,
+    true,
+)
 ```
 ### Delete
 ### Search
