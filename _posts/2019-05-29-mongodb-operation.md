@@ -5,11 +5,18 @@ date:   2019-05-29 16:13 +0800
 tags: Mongodb
 ---
 
+### 创建集合
+```
+db.createCollection('things')
+```
+
 ### Insert
 ##### Example
 ```
 db.things.save(thing)
+db.things.insert({...})
 ```
+
 ### Update
 ##### Operation
 ```
@@ -19,7 +26,7 @@ $inc
 ##### Description
 ```
 db.things.update(
-    <query>, 
+    <query>,
     <update>,
     upsert: <boolean>, //可选，这个参数的意思是，如果不存在update的记录，是否插入objNew,true为插入，默认是false，不插入。
     multi = <boolean>, //可选，mongodb 默认是false,只更新找到的第一条记录，如果这个参数为true,就把按条件查出来多条记录全部更新。
@@ -34,18 +41,26 @@ db.things.update(
     true,
 )
 ```
+##### rename field
+```
+db.things.update({}, {$rename: {phone: 'mobile'}}, false, true)
+```
 ### Delete
+##### delete field
+```
+db.things.update({}, {$unset: {phone: ''}}, false, true)
+```
 ### Search
 ##### Condition Operation
 ```
-$gt : > 
-$lt : < 
-$gte: >= 
-$lte: <= 
-$ne : !=、<> 
-$in : in 
-$nin: not in 
-$all: all 
+$gt : >
+$lt : <
+$gte: >=
+$lte: <=
+$ne : !=、<>
+$in : in
+$nin: not in
+$all: all
 $not: isn't
 ```
 ##### Example
@@ -67,7 +82,7 @@ db.things.find({field: { $all: ARRAY }}) field all in ARRAY
 db.things.find({field: { $size: SIZE }}) filed.length === SIZE
 db.things.find({field: { $exists: BOOLEAN }}) exist field
 db.things.find({'field.name': NAME})
-db.things.find({field: { $not: RegExp }}) 
+db.things.find({field: { $not: RegExp }})
 
 db.things.distinct("topic") all topics
 db.person.distinct("friends", {"nickName" : {"$in" : ["Zhangsan", "Lisi"]}})
