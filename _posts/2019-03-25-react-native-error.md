@@ -22,3 +22,12 @@ sdk.dir = C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk
 
 [Issue](https://github.com/realm/realm-js/issues/2305#issuecomment-476561324)
 
+- 解决升级到Xcode10，react native项目运行报错问题
+```
+Xcode 10: Build input file double-conversion cannot be found
+error: Build input file cannot be found: '../node_modules/react-native/third-party/double-conversion-1.1.6/src/strtod.cc'
+configure: error: in `../node_modules/react-native/third-party/glog-0.3.4'
+```
+
+1. cd node_modules/react-native/scripts && ./ios-install-third-party.sh && cd ../../../
+2. cd node_modules/react-native/third-party/glog-0.3.4/ && ../../scripts/ios-configure-glog.sh && cd ../../../../
