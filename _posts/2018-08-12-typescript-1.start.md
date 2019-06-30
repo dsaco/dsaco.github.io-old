@@ -2,7 +2,7 @@
 layout: post
 title:  "Typescript 开始"
 date:   2018-08-12 22:49:00 +0800
-tags: typescript react react-redux react-router redux-saga webpack tslint
+tags: Typescript React react-redux react-router redux-saga webpack tslint
 ---
 
 > typescript简直有毒，只要和react等框架组合在一起，坑真的源源不断的来，我真的是脑阔疼。

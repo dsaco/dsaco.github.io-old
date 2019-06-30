@@ -2,7 +2,7 @@
 layout: post
 title:  "react-router"
 date:   2018-08-09 23:46:00 +0800
-tags: react-router react
+tags: React react-router 
 cover: "/assets/img/post-cover-react-router.png"
 ---
 

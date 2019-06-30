@@ -2,7 +2,7 @@
 layout: post
 title:  "HTML document对象"
 date:   2018-07-29 22:45:55 +0800
-tags: javascript api
+tags: Javascript api
 ---
 #### 属性
 > ``.activeElement`` 返回当前获取焦点的元素

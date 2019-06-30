@@ -2,7 +2,7 @@
 layout: post
 title:  "Typescript 配置路由"
 date:   2018-08-13 22:39:00 +0800
-tags: typescript react react-redux react-router redux-saga webpack tslint
+tags: Typescript React react-redux react-router redux-saga webpack tslint
 ---
 
 

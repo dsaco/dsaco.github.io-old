@@ -2,7 +2,7 @@
 layout: post
 title:  "Typescript从零开始"
 date:   2018-08-08 22:26:00 +0800
-tags: typescript react
+tags: Typescript React
 ---
 
 跟着官网的例子，我们现在已经把环境搭建起来了

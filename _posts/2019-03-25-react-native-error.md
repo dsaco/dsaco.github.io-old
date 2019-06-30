@@ -2,7 +2,7 @@
 layout: post
 title:  "React-Native错误汇总"
 date:   2019-03-25 11:20:00 +0800
-tags: React-Native Errors
+tags: React-Native error
 ---
 
 - 启动开发异常 **Command failed: gradlew.bat installDebug**

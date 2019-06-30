@@ -5,7 +5,6 @@ date:   2018-11-06 11:20:00 +0800
 tags: Javascript event
 ---
 
-床前明月光 疑是地上霜
 
 ```
 <ul>
@@ -14,6 +13,7 @@ tags: Javascript event
     <li></li>
 </ul>
 ```
+
 比起循环每个li并绑定点击事件，不如
 {% highlight js %}
 const ul = document.querySelector('ul');

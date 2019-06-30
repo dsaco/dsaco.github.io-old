@@ -2,7 +2,7 @@
 layout: post
 title:  "react-native"
 date:   2018-10-24 15:21:00 +0800
-tags: react react-native
+tags: React React-Native
 ---
 
 ### 安装
@@ -18,8 +18,8 @@ Chocolatey安装
 choco install yarn
 yarn --version
 ```
-yarn安装失败 
-失败原因 需要 4-9版本的node 
+yarn安装失败
+失败原因 需要 4-9版本的node
 
 安装nvm
 ```
@@ -27,7 +27,7 @@ nvm install 8.12.0
 nvm use 8.12.0
 ```
 
-配置 ANDROID_HOME 环境变量 
+配置 ANDROID_HOME 环境变量
 path %ANDROID_HOME%
 
 错误：peer not authenticated

@@ -2,7 +2,7 @@
 layout: post
 title:  "javascript中Array的方法"
 date:   2018-08-02 23:53:00 +0800
-tags: javascript api array
+tags: Javascript api array
 ---
 以下会用到的变量：
 {% highlight js %}

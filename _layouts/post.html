@@ -15,6 +15,7 @@ layout: default
     <div class="wrapper">
       <div class="site-heading">
         <h1>{{page.title}}</h1>
+        <pre style="text-align: right;border: none;font-size: 12px;">{{page.desc | default: ""}}</pre>
         <p>
           <time>
             {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}

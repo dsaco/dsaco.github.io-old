@@ -1,0 +1,18 @@
+.tags {
+    background: linear-gradient(to bottom, gray, rgba(white, 0));
+    padding-top: 56px;
+    text-align: center;
+}
+.tags-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    max-width: 768px;
+    margin-top: 50px;
+    // margin: 0 auto;
+    .tag {
+        // border: 1px solid black;
+        padding: 10px;
+        cursor: pointer;
+        // font-size: 12px;
+    }
+}

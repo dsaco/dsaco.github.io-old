@@ -2,7 +2,7 @@
 layout: post
 title:  "fetch"
 date:   2018-08-04 17:36:00 +0800
-tags: javascript api fetch
+tags: Javascript api fetch
 ---
 
 Fetch Api 提供了一个javscript接口，用于访问和操纵HTTP管道的部分，例如请求和响应。

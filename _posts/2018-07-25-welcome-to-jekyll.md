@@ -3,10 +3,8 @@ layout: post
 title:  "Welcome to Jekyll!"
 date:   2018-07-25 22:47:55 +0800
 <!-- categories: jekyll update -->
-tags: blog markdown
+tags: Markdown
 ---
-
-markdown用法
 
 ##### 标题
 ```
@@ -17,6 +15,7 @@ markdown用法
 ##### h5
 ###### h6
 ```
+
 ##### 无序列表
 ```
 - 文本1
@@ -33,7 +32,9 @@ markdown用法
 [瑞秋](ds-or.com)
 ```
 ##### 图片
+```
 ![](cdn.ds-or.com/web/default.jpg)
+```
 ##### 引用
 ```
 > 一盏灯， 一片昏黄； 一简书， 一杯淡茶。 守着那一份淡定， 品读属于自己的寂寞。 保持淡定， 才能欣赏到最美丽的风景！ 保持淡定， 人生从此不再寂寞。
@@ -52,7 +53,6 @@ markdown用法
 - [x] yes
 ```
 ##### 代码段
-```
 {% highlight bash %}
 git clone url
 {% endhighlight %}
@@ -64,4 +64,3 @@ end
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
-```

@@ -2,7 +2,7 @@
 layout: post
 title:  "javascript中的继承模式"
 date:   2018-08-01 00:27:00 +0800
-tags: javascript 原型 原型链 继承
+tags: Javascript 原型 原型链 继承
 ---
 
 
