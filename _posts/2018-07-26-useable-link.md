@@ -48,3 +48,7 @@ tags: api
 ##### [mongoose](https://mongoosejs.com/)
 
 ##### [koa](https://koajs.com/)
+
+### Other
+
+##### [liquid模板语言中文文档](https://liquid.bootcss.com/)

@@ -11,8 +11,23 @@
     // margin: 0 auto;
     .tag {
         // border: 1px solid black;
-        padding: 10px;
+        color: gray;
+        padding: 5px;
         cursor: pointer;
         // font-size: 12px;
+        span {
+            // background-color: rgba(black, .2);
+            padding: 5px 10px;
+            transition: color .3s;
+            sup {
+                color: #0ff;
+            }
+            // border-bottom: 2px solid gray;
+        }
+        &:hover {
+            span {
+                color: #111;
+            }
+        }
     }
 }
