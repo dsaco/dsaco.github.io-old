@@ -5,6 +5,13 @@ date:   2019-03-25 11:20:00 +0800
 tags: React-Native error
 ---
 
+- 启动项目 gradle下载缓慢 
+
+手动下载gradle并且配置android/gradle/wrapper/gradle-wrapper.properties 
+```
+distributionUrl=file:///D:/Android/my-gradle/gradle-5.4.1-all.zip
+```
+
 - 启动开发异常 **Command failed: gradlew.bat installDebug**
 
 在android/gradle.properties添加
