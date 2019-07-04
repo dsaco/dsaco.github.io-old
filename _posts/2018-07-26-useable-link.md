@@ -35,6 +35,10 @@ tags: api
 
 ##### [redus-saga中文文档](https://redux-saga-in-chinese.js.org/docs/api/index.html)
 
+##### [nextjs中文文档](https://nextjs.frontendx.cn/)
+
+##### [nextjs文档](https://nextjs.org/)
+
 ### Nodejs
 
 ##### [nodejs](https://nodejs.org/en/)
@@ -48,6 +52,10 @@ tags: api
 ##### [mongoose](https://mongoosejs.com/)
 
 ##### [koa](https://koajs.com/)
+
+##### [nestjs中文文档](https://docs.nestjs.cn/)
+
+##### [nestjs](https://docs.nestjs.com/)
 
 ### Other
 
