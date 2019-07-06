@@ -39,6 +39,8 @@ tags: api
 
 ##### [nextjs文档](https://nextjs.org/)
 
+##### [webpack](https://webpack.js.org/)
+
 ### Nodejs
 
 ##### [nodejs](https://nodejs.org/en/)
@@ -60,3 +62,5 @@ tags: api
 ### Other
 
 ##### [liquid模板语言中文文档](https://liquid.bootcss.com/)
+
+##### [python3 cookbook中文](https://python3-cookbook.readthedocs.io/zh_CN/latest/)

@@ -10,6 +10,11 @@ tags: Mongodb
 db.createCollection('things')
 ```
 
+### 更改集合名
+```
+db.adminCommand({renameCollection: "db.collection", to: "db.collection"})
+```
+
 ### Insert
 ##### Example
 ```
