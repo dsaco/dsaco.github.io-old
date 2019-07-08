@@ -38,3 +38,9 @@ configure: error: in `../node_modules/react-native/third-party/glog-0.3.4'
 
 1. cd node_modules/react-native/scripts && ./ios-install-third-party.sh && cd ../../../
 2. cd node_modules/react-native/third-party/glog-0.3.4/ && ../../scripts/ios-configure-glog.sh && cd ../../../../
+
+- Ios打包异常 main.jsbundle does not exist
+
+修改 Build Phases / Bundle React Native code and images
+
+export NODE_BINARY= /usr/local/bin/node
